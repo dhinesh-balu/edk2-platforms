@@ -56,7 +56,9 @@
   "7B6-1\0"                                             \
   "7B7-1\0"                                             \
   "7F2-1\0"                                             \
-  "7EE-1\0"
+  "7EE-1\0"                                             \
+  "7F9-1\0"
+
 
 typedef enum {
   PartNumber = 1,
@@ -184,6 +186,7 @@ InstallType4ProcessorInformation (
   case RdN2Cfg1:
   case RdV2:
   case RdV3:
+  case RdV3Cfg1:
     mArmRdSmbiosType4.Base.CoreCount = CoreCount;
     mArmRdSmbiosType4.Base.EnabledCoreCount = CoreCount;
     mArmRdSmbiosType4.Base.ThreadCount = CoreCount;
